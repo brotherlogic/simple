@@ -1,0 +1,15 @@
+syntax = "proto3";
+
+package simple;
+
+option go_package = "github.com/brotherlogic/simple/proto";
+
+message GetGreetingRequest {}
+
+message GetGreetingResponse {
+    string greeting = 1;
+}
+
+service GreetingService {
+  rpc GetGreeting(GetGreetingRequest) returns (GetGreetingResponse) {};
+}
