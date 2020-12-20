@@ -38,8 +38,8 @@ jobs:
         context: .
         push: true
         tags: brotherlogic/simple:latest
-      build-args: |
-        platform=linux/arm64 
+        build-args: |
+          platform=linux/arm64 
 
     - name: Image digest
       run: echo ${{ steps.docker_build.outputs.digest }}
