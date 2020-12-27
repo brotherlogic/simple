@@ -10,7 +10,7 @@ import (
 )
 
 func main() {
-	conn, err := grpc.Dial("localhost:8081", grpc.WithInsecure())
+	conn, err := grpc.Dial("192.168.86.122:443", grpc.WithInsecure())
 	if err != nil {
 		log.Fatalf("Bad Dial: %v", err)
 	}
